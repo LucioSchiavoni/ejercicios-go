@@ -1,8 +1,7 @@
 package main
 
 import (
-	e "cursoGo/ejercicios/interfaces"
-	"cursoGo/models"
+	"cursoGo/webserver"
 )
 
 func main() {
@@ -28,6 +27,17 @@ func main() {
 	// slices.MuestroSlice()
 	// slices.Capacidad()
 	// users.AltaUsuario()
-	Manolito := new(models.Usuario)
-	e.ActivandoUsuarios(Manolito)
+	// Manolito := new(models.Usuario)
+	// e.ActivandoUsuarios(Manolito)
+	// defer_panic.VemosDefer()
+	// defer_panic.EjemploPanic()
+	// canal1 := make(chan bool)
+	// // go para decir que es async
+	// go goroutines.MiNombreLento("Lucio Schiavoni", canal1)
+	// //es como un await en node y defer para dejarlo a lo ultimo
+	// defer func() {
+	// 	<-canal1
+	// }()
+	// fmt.Println("Bienvenido")
+	webserver.ServidorWeb()
 }
