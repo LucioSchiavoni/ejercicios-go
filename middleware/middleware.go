@@ -27,12 +27,13 @@ func MiMiddleware() {
 	fmt.Println(result)
 	result = OperacionMiddleware(multiplicar)(7, 3)
 	fmt.Println(result)
-	result = OperacionMiddleware(dividir)(27, 5)
+	result = OperacionMiddleware(dividir)(1020, 5)
+	fmt.Println(result)
 }
 
 func OperacionMiddleware(f func(int, int) int) func(int, int) int {
 	return func(a, b int) int {
-		fmt.Print("Inicio de Operacion")
+		fmt.Print("Inicio de Operacion\n")
 		return f(a, b)
 	}
 
