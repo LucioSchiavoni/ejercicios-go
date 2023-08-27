@@ -1,7 +1,7 @@
 package main
 
 import (
-	"cursoGo/webserver"
+	"cursoGo/middleware"
 )
 
 func main() {
@@ -39,5 +39,6 @@ func main() {
 	// 	<-canal1
 	// }()
 	// fmt.Println("Bienvenido")
-	webserver.ServidorWeb()
+	// webserver.ServidorWeb()
+	middleware.MiMiddleware()
 }
